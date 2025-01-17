@@ -9,7 +9,6 @@ ju1=1
 ju2=2
 paso1=0
 paso2=0
-
 print("bienvenidos al himalayas..... helados")
 while True:
     print("holi bienvenido a mi ludo muy lindo y hermoso como el dueño ")
@@ -29,11 +28,20 @@ while True:
             break
         elif paso1>24:
             print("usted se paso de pasos")
-            paso1=paso1-a
+            sobra1=paso1-24
+            paso1=24-sobra1
             print("usted esta en la posicion",paso1)
-    elif jugar==ju2:
-        print("el jugador 1 avanza",a)
+    if jugar==ju2:
+        print("el jugador 2 avanza",a)
         paso2=paso2+a
-        print("lleva",paso2,"/ 24")
+        print("se le suman",paso2,"/ 24")
         input("enter para volver al menu ")
         system("cls")
+        if paso2==24:
+            print("usted gano")
+            break
+        elif paso2>24:
+            print("usted se paso de pasos")
+            sobra2=paso2-24
+            paso2=24-sobra2
+            print("usted esta en la posicion",paso2)
