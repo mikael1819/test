@@ -53,11 +53,13 @@ while True:
                         print(f"los super volados\n{p}\n[subtotal (sin iva)={tsin} con un iva del = 19% total a pagar es de {iva}]")
                         break
                     case 2:
+                        t=t*1.5
                         iva=t+((t*19)/100)
                         tsin=t
                         print(f"los super volados\n{p}\n[subtotal (sin iva)={tsin} con un iva del = 19% total a pagar es de {iva}]")
                         break
                     case 3:
+                        t=t*2.89
                         t=t+((t*19)/100)
                         tsin=t
                         print(f"los super volados\n{p}\n[subtotal (sin iva)={tsin} con un iva del = 19% total a pagar es de {iva}]")
